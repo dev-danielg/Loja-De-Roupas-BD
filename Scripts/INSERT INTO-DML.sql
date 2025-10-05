@@ -26,95 +26,79 @@ INSERT INTO `Endereco` (`idEndereco`,`estado`,`cidade`,`bairro`,`rua`,`cep`) VAL
 
 -- 2) 20 Fornecedores
 INSERT INTO `Fornecedor` (`idFornecedor`,`telefone`,`email`,`nome`,`Endereco_idEndereco`) VALUES
-(1,'81-99876-5432','textilcentral@fornecedor.com','Textil Central Ltda',1),
-(2,'11-97654-3210','modasul@fornecedor.com','ModaSul Importações',2),
-(3,'21-98877-1122','mar@fornecedorrj.com','RioFashion SA',3),
-(4,'31-99988-7766','bhfabrica@fornecedor.com','Fábrica Mineira',4),
-(5,'71-99111-2233','bahia@textil.com','Bahia Tecidos',5),
-(6,'85-99822-3344','forte@fornecedor.com','Fortaleza Textil',6),
-(7,'51-99777-4455','porto@fornecedor.com','Gaúcha Moda',7),
-(8,'41-99666-5566','curti@fornecedor.com','Curitiba Confecções',8),
-(9,'61-99555-6677','bras@fornecedor.com','Brasília Atacadista',9),
-(10,'81-99444-7788','olinda@fornecedor.com','Olinda Vestuário',10),
-(11,'19-99333-8899','campinas@fornecedor.com','Campinas Fashion',11),
-(12,'21-99222-9900','niteroi@fornecedor.com','Niterói Tecidos',12),
-(13,'34-99111-1010','ub@fornecedor.com','Triângulo Textile',13),
-(14,'91-99000-1112','belem@fornecedor.com','Belém Moda',14),
-(15,'84-98999-1213','natal@fornecedor.com','Natal Shoes',15),
-(16,'62-98888-1314','goiania@fornecedor.com','Goiânia Imports',16),
-(17,'98-98777-1415','saoluis@fornecedor.com','São Luís Atelier',17),
-(18,'48-98666-1516','floripa@fornecedor.com','Ilha Fashion',18),
-(19,'83-98555-1617','jp@fornecedor.com','Tambaú Traders',19),
-(20,'86-98444-1718','teresina@fornecedor.com','Piaui Textil',20);
+(1,'81998765432','textilcentral@fornecedor.com','Textil Central Ltda',1),
+(2,'11976543210','modasul@fornecedor.com','ModaSul Importações',2),
+(3,'21988771122','mar@fornecedorrj.com','RioFashion SA',3),
+(4,'31999887766','bhfabrica@fornecedor.com','Fábrica Mineira',4),
+(5,'71991112233','bahia@textil.com','Bahia Tecidos',5),
+(6,'85998223344','forte@fornecedor.com','Fortaleza Textil',6),
+(7,'51997774455','porto@fornecedor.com','Gaúcha Moda',7),
+(8,'41996665566','curti@fornecedor.com','Curitiba Confecções',8),
+(9,'61995556677','bras@fornecedor.com','Brasília Atacadista',9),
+(10,'81994447788','olinda@fornecedor.com','Olinda Vestuário',10),
+(11,'19993338899','campinas@fornecedor.com','Campinas Fashion',11),
+(12,'21992229900','niteroi@fornecedor.com','Niterói Tecidos',12),
+(13,'34991111010','ub@fornecedor.com','Triângulo Textile',13),
+(14,'91990001112','belem@fornecedor.com','Belém Moda',14),
+(15,'84989991213','natal@fornecedor.com','Natal Shoes',15),
+(16,'62988881314','goiania@fornecedor.com','Goiânia Imports',16),
+(17,'9898771415','saoluis@fornecedor.com','São Luís Atelier',17),
+(18,'48986661516','floripa@fornecedor.com','Ilha Fashion',18),
+(19,'83985551617','jp@fornecedor.com','Tambaú Traders',19),
+(20,'86984441718','teresina@fornecedor.com','Piaui Textil',20);
 
 -- 3) 20 Funcionários
 INSERT INTO `Funcionario` (`idFuncionario`,`nome`,`cargo`,`contato`,`Endereco_idEndereco`) VALUES
-(1,'Mariana Silva','Gerente','81-99911-2233',3),
-(2,'Carlos Pereira','Atendente','31-98877-6655',4),
-(3,'Fernanda Gomes','Caixa','11-97766-5544',2),
-(4,'Lucas Almeida','Estoquista','41-97655-4433',8),
-(5,'Paula Santos','Vendedora','71-97544-3322',5),
-(6,'Renato Costa','Supervisor','85-97433-2211',6),
-(7,'Bianca Rocha','Atendente','51-97322-1100',7),
-(8,'Mateus Freitas','Vendedor','61-97211-0099',9),
-(9,'Luiza Martins','Gerente de RH','19-97100-9988',11),
-(10,'Thiago Barros','Analista','21-97099-8877',12),
-(11,'Patrícia Lima','Caixa','34-96988-7766',13),
-(12,'Rafael Nunes','Estoquista','91-96877-6655',14),
-(13,'Sofia Duarte','Vendedora','84-96766-5544',15),
-(14,'André Melo','Supervisor','62-96655-4433',16),
-(15,'Carla Farias','Atendente','98-96544-3322',17),
-(16,'Bruno Serpa','Vendedor','48-96433-2211',18),
-(17,'Marcos Vinicius','Gerente de Loja','83-96322-1100',19),
-(18,'Adriana Pires','Caixa','86-96211-0099',20),
-(19,'Diego Torres','Vendedor','81-96100-9988',1),
-(20,'Natália Ribeiro','Atendente','11-96099-8877',10);
+(1,'Mariana Silva','Gerente','81999112233',3),
+(2,'Carlos Pereira','Atendente','31988776655',4),
+(3,'Fernanda Gomes','Caixa','11977665544',2),
+(4,'Lucas Almeida','Estoquista','41976554433',8),
+(5,'Paula Santos','Vendedora','71975443322',5),
+(6,'Renato Costa','Supervisor','85974332211',6),
+(7,'Bianca Rocha','Atendente','51973221100',7),
+(8,'Mateus Freitas','Vendedor','61972110099',9),
+(9,'Luiza Martins','Gerente de RH','19971009988',11),
+(10,'Thiago Barros','Analista','21970998877',12),
+(11,'Patrícia Lima','Caixa','34969887766',13),
+(12,'Rafael Nunes','Estoquista','91968776655',14),
+(13,'Sofia Duarte','Vendedora','84967665544',15),
+(14,'André Melo','Supervisor','62966554433',16),
+(15,'Carla Farias','Atendente','98965443322',17),
+(16,'Bruno Serpa','Vendedor','48964332211',18),
+(17,'Marcos Vinicius','Gerente de Loja','83963221100',19),
+(18,'Adriana Pires','Caixa','86962110099',20),
+(19,'Diego Torres','Vendedor','81961009988',1),
+(20,'Natália Ribeiro','Atendente','11960998877',10);
 
 -- 4) 20 Clientes
 INSERT INTO `Cliente` (`idCliente`,`nomeCliente`,`email`,`telefone`,`Endereco_idEndereco`) VALUES
-(1,'Ana Costa','ana.costa@email.com','81-91234-5678',1),
-(2,'João Ramos','joao.ramos@email.com','11-93456-7890',2),
-(3,'Marcos Silva','marcos.silva@email.com','21-94567-8901',3),
-(4,'Juliana Alves','juliana.alves@email.com','31-95678-9012',4),
-(5,'Roberto Souza','roberto.souza@email.com','71-96789-0123',5),
-(6,'Isabela Moreira','isabela.moreira@email.com','85-97890-1234',6),
-(7,'Felipe Araújo','felipe.araujo@email.com','51-98901-2345',7),
-(8,'Caroline Dias','caroline.dias@email.com','41-99012-3456',8),
-(9,'Rafaela Pinto','rafaela.pinto@email.com','61-90123-4567',9),
-(10,'Gustavo Henrique','gustavo.henrique@email.com','81-91234-0000',10),
-(11,'Larissa Teixeira','larissa.tx@email.com','19-92345-6789',11),
-(12,'Eduardo Nogueira','edu.nogueira@email.com','21-93456-1234',12),
-(13,'Vanessa Rocha','vanessa.rocha@email.com','34-94567-2345',13),
-(14,'Igor Fernandes','igor.fernandes@email.com','91-95678-3456',14),
-(15,'Monica Castro','monica.castro@email.com','84-96789-4567',15),
-(16,'Paulo Henrique','paulo.henrique@email.com','62-97890-5678',16),
-(17,'Bruna Lopes','bruna.lopes@email.com','98-98901-6789',17),
-(18,'Leandro Mota','leandro.mota@email.com','48-99012-7890',18),
-(19,'Renata Alves','renata.alves@email.com','83-90123-8901',19),
-(20,'Vitor Ramos','vitor.ramos@email.com','86-91234-9012',20);
+(1,'Ana Costa','ana.costa@email.com','81912345678',1),
+(2,'João Ramos','joao.ramos@email.com','11934567890',2),
+(3,'Marcos Silva','marcos.silva@email.com','21945678901',3),
+(4,'Juliana Alves','juliana.alves@email.com','31956789012',4),
+(5,'Roberto Souza','roberto.souza@email.com','71967890123',5),
+(6,'Isabela Moreira','isabela.moreira@email.com','85978901234',6),
+(7,'Felipe Araújo','felipe.araujo@email.com','51989012345',7),
+(8,'Caroline Dias','caroline.dias@email.com','41990123456',8),
+(9,'Rafaela Pinto','rafaela.pinto@email.com','61901234567',9),
+(10,'Gustavo Henrique','gustavo.henrique@email.com','81912340000',10),
+(11,'Larissa Teixeira','larissa.tx@email.com','19923456789',11),
+(12,'Eduardo Nogueira','edu.nogueira@email.com','21934561234',12),
+(13,'Vanessa Rocha','vanessa.rocha@email.com','34945672345',13),
+(14,'Igor Fernandes','igor.fernandes@email.com','91956783456',14),
+(15,'Monica Castro','monica.castro@email.com','84967894567',15),
+(16,'Paulo Henrique','paulo.henrique@email.com','62978905678',16),
+(17,'Bruna Lopes','bruna.lopes@email.com','98989016789',17),
+(18,'Leandro Mota','leandro.mota@email.com','48990127890',18),
+(19,'Renata Alves','renata.alves@email.com','83901238901',19),
+(20,'Vitor Ramos','vitor.ramos@email.com','86912349012',20);
 
 -- 5) 20 Categorias
 INSERT INTO `Categoria` (`idCategoria`,`tipo`) VALUES
-(1,'Masculina'),
-(2,'Feminina'),
-(3,'Infantil'),
-(4,'Acessório'),
-(5,'Calçado'),
-(6,'Esporte'),
-(7,'Praia'),
-(8,'Festa'),
-(9,'Casual'),
-(10,'Formal'),
-(11,'Inverno'),
-(12,'Verão'),
-(13,'Unissex'),
-(14,'Jeans'),
-(15,'Esportivo'),
-(16,'Plus Size'),
-(17,'Lingerie'),
-(18,'Baby'),
-(19,'Noite'),
-(20,'Outdoor');
+(1,'Masculina'),(2,'Feminina'),(3,'Infantil'),(4,'Acessório'),(5,'Calçado'),
+(6,'Esporte'),(7,'Praia'),(8,'Festa'),(9,'Casual'),(10,'Formal'),
+(11,'Inverno'),(12,'Verão'),(13,'Unissex'),(14,'Jeans'),(15,'Esportivo'),
+(16,'Plus Size'),(17,'Lingerie'),(18,'Baby'),(19,'Noite'),(20,'Outdoor');
 
 -- 6) 20 Produtos
 INSERT INTO `Produto` (`idProduto`,`nomeProduto`,`descricaoProduto`,`precoProduto`,`tamanhoProduto`,`marcaProduto`,`corProduto`) VALUES
@@ -139,35 +123,30 @@ INSERT INTO `Produto` (`idProduto`,`nomeProduto`,`descricaoProduto`,`precoProdut
 (19,'Meia Esportiva','Par de meias com amortecimento',19.90,'U','SportSox','Branco'),
 (20,'Bolsa Tiracolo','Bolsa pequena para uso diário',149.90,'U','CarryAll','Preto');
 
--- 7) 20 Estoques
-INSERT INTO `Estoque` (`idEstoque`,`quantidade`,`dataEntrada`,`dataSaida`) VALUES
-(1,50,'2025-01-10','2026-01-10'),
-(2,120,'2025-02-15','2026-02-15'),
-(3,30,'2025-03-01','2026-03-01'),
-(4,40,'2025-03-10','2026-03-10'),
-(5,80,'2025-01-20','2026-01-20'),
-(6,150,'2025-04-05','2026-04-05'),
-(7,60,'2025-05-11','2026-05-11'),
-(8,25,'2025-06-22','2026-06-22'),
-(9,70,'2025-07-03','2026-07-03'),
-(10,15,'2025-08-14','2026-08-14'),
-(11,200,'2025-01-05','2026-01-05'),
-(12,18,'2025-02-28','2026-02-28'),
-(13,90,'2025-03-15','2026-03-15'),
-(14,55,'2025-04-20','2026-04-20'),
-(15,33,'2025-05-30','2026-05-30'),
-(16,77,'2025-06-01','2026-06-01'),
-(17,44,'2025-07-10','2026-07-10'),
-(18,66,'2025-08-01','2026-08-01'),
-(19,88,'2025-09-12','2026-09-12'),
-(20,99,'2025-10-01','2026-10-01');
+-- 7) 20 Estoques  
+INSERT INTO `Estoque` (`idEstoque`,`quantidade`,`dataEntrada`,`dataSaida`,`Produto_idProduto`) VALUES
+(1,50,'2025-01-10','2026-01-10',1),
+(2,120,'2025-02-15','2026-02-15',2),
+(3,30,'2025-03-01','2026-03-01',3),
+(4,40,'2025-03-10','2026-03-10',4),
+(5,80,'2025-01-20','2026-01-20',5),
+(6,150,'2025-04-05','2026-04-05',6),
+(7,60,'2025-05-11','2026-05-11',7),
+(8,25,'2025-06-22','2026-06-22',8),
+(9,70,'2025-07-03','2026-07-03',9),
+(10,15,'2025-08-14','2026-08-14',10),
+(11,200,'2025-01-05','2026-01-05',11),
+(12,18,'2025-02-28','2026-02-28',12),
+(13,90,'2025-03-15','2026-03-15',13),
+(14,55,'2025-04-20','2026-04-20',14),
+(15,33,'2025-05-30','2026-05-30',15),
+(16,77,'2025-06-01','2026-06-01',16),
+(17,44,'2025-07-10','2026-07-10',17),
+(18,66,'2025-08-01','2026-08-01',18),
+(19,88,'2025-09-12','2026-09-12',19),
+(20,99,'2025-10-01','2026-10-01',20);
 
--- 8) 20 mapeamentos produtoEstoque (cada produto ligado a um estoque)
-INSERT INTO `produtoEstoque` (`Produto_idProduto`,`Estoque_idEstoque`) VALUES
-(1,1),(2,2),(3,3),(4,4),(5,5),
-(6,6),(7,7),(8,8),(9,9),(10,10),
-(11,11),(12,12),(13,13),(14,14),(15,15),
-(16,16),(17,17),(18,18),(19,19),(20,20);
+-- 8) produtoEstoque removido (modelo alterado) -- não inserir
 
 -- 9) 20 Promoções
 INSERT INTO `Promocao` (`idPromocao`,`nome`,`dataInicio`,`dataFim`,`tipo`,`desconto`,`descricao`) VALUES
@@ -215,7 +194,7 @@ INSERT INTO `FormaPag` (`IdFormaPag`,`Tipo`,`ValorPago`,`QtdParcelas`) VALUES
 (19,'Boleto Fácil',0,1),
 (20,'PIX Parcelado',1,4);
 
--- 11) 20 Vendas (cada venda referencia um funcionário, cliente e forma de pagamento)
+-- 11) 20 Vendas
 INSERT INTO `Venda` (`IdVenda`,`dataVenda`,`status`,`Funcionario_idFuncionario`,`Cliente_idCliente`,`FormaPag_IdFormaPag`) VALUES
 (1,'2025-01-11','Concluída',1,1,1),
 (2,'2025-02-18','Concluída',2,2,2),
@@ -238,7 +217,7 @@ INSERT INTO `Venda` (`IdVenda`,`dataVenda`,`status`,`Funcionario_idFuncionario`,
 (19,'2025-12-24','Concluída',19,19,19),
 (20,'2025-12-31','Concluída',20,20,20);
 
--- 12) 20 itemVenda (cada item referencia um produto e uma venda; algumas com promoção)
+-- 12) 20 itemVenda
 INSERT INTO `itemVenda` (`Produto_idProduto`,`Venda_IdVenda`,`valorTotal`,`quantidade`,`Promocao_idPromocao`) VALUES
 (1,1,99.80,2,1),
 (2,2,129.90,1,NULL),
@@ -284,14 +263,11 @@ INSERT INTO `Registro` (`idRegistro`,`Fornecedor_idFornecedor`,`Produto_idProdut
 (19,19,19,20.00,88,'2025-09-11'),
 (20,20,20,95.00,99,'2025-10-01');
 
--- 14) 20 produtoCategoria (mapeando produtos para categorias)
+-- 14) 20 produtoCategoria
 INSERT INTO `produtoCategoria` (`Produto_idProduto`,`Categoria_idCategoria`) VALUES
 (1,9),(2,14),(3,11),(4,12),(5,6),
 (6,7),(7,11),(8,2),(9,10),(10,5),
 (11,15),(12,14),(13,5),(14,9),(15,6),
 (16,9),(17,12),(18,11),(19,6),(20,4);
-
--- 15) 20 adicionais para garantir cada tabela tem 20 registros (caso alguma tabela precise de mais linhas de relacionamento)
--- (já foram preenchidos 20 em todas as tabelas principais e relacionamentos)
 
 SET FOREIGN_KEY_CHECKS = 1;
