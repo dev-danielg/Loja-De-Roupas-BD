@@ -108,7 +108,14 @@ CREATE TABLE IF NOT EXISTS `lojaDeRoupa`.`Estoque` (
   `quantidade` INT NOT NULL,
   `dataEntrada` DATE NOT NULL,
   `dataSaida` DATE NOT NULL,
-  PRIMARY KEY (`idEstoque`))
+  `Produto_idProduto` INT NOT NULL,
+  PRIMARY KEY (`idEstoque`),
+  INDEX `fk_Estoque_Produto1_idx` (`Produto_idProduto` ASC) VISIBLE,
+  CONSTRAINT `fk_Estoque_Produto1`
+    FOREIGN KEY (`Produto_idProduto`)
+    REFERENCES `lojaDeRoupa`.`Produto` (`idProduto`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -182,28 +189,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `lojaDeRoupa`.`produtoEstoque`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `lojaDeRoupa`.`produtoEstoque` (
-  `Produto_idProduto` INT NOT NULL,
-  `Estoque_idEstoque` INT NOT NULL,
-  PRIMARY KEY (`Estoque_idEstoque`, `Produto_idProduto`),
-  INDEX `fk_Produto_has_Estoque_Estoque1_idx` (`Estoque_idEstoque` ASC) VISIBLE,
-  INDEX `fk_Produto_has_Estoque_Produto1_idx` (`Produto_idProduto` ASC) VISIBLE,
-  CONSTRAINT `fk_Produto_has_Estoque_Produto1`
-    FOREIGN KEY (`Produto_idProduto`)
-    REFERENCES `lojaDeRoupa`.`Produto` (`idProduto`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Produto_has_Estoque_Estoque1`
-    FOREIGN KEY (`Estoque_idEstoque`)
-    REFERENCES `lojaDeRoupa`.`Estoque` (`idEstoque`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `lojaDeRoupa`.`Registro`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `lojaDeRoupa`.`Registro` (
@@ -259,7 +244,7 @@ CREATE TABLE IF NOT EXISTS `lojaDeRoupa`.`itemVenda` (
   `valorTotal` DECIMAL(7,2) NOT NULL,
   `quantidade` INT NOT NULL,
   `Promocao_idPromocao` INT NULL,
-  PRIMARY KEY (`Produto_idProduto`, `Venda_IdVenda`),
+  PRIMARY KEY (`Venda_IdVenda`, `Produto_idProduto`),
   INDEX `fk_itemVenda_Promocao1_idx` (`Promocao_idPromocao` ASC) VISIBLE,
   INDEX `fk_itemVenda_Venda1_idx` (`Venda_IdVenda` ASC) VISIBLE,
   CONSTRAINT `fk_itemVenda_Produto1`
