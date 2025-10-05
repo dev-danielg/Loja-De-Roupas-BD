@@ -1,5 +1,5 @@
 Trio:
 
-Daniel Gonçalves de Freitas
-Lucas Ferreira de Santana
+Daniel Gonçalves de Freitas<br>
+Lucas Ferreira de Santana<br>
 Luís Caio
